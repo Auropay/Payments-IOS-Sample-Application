@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AuroPay
+import AuroPayPayments
 
 class ViewController: UIViewController {
 
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
     @IBAction func onTapPay(_ sender: UIButton) {
         
         //Create Theme
-        let theme = APTheme(primaryColor: UIColor.init(hexString: "#0028AE"), primaryTextColor: .white, secondaryColor: UIColor.init(hexString: "#737373"), secondaryTextColor: .white)
+        let theme = APTheme(primaryColor: UIColor.init(hexString: "#236C6C"), primaryTextColor: .white, secondaryColor: .red, secondaryTextColor: .white)
         
         //Initilize the AuropayBuilder with subdomain Id, accessKey and secretKey
         let apb = AuroPayBuilder()

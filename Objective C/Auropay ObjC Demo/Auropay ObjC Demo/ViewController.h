@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Auropay/Auropay-Swift.h>
+#import <AuroPayPayments/AuroPayPayments-Swift.h>
 
 @interface ViewController : UIViewController<APPaymentCompletionProtocol>
 
