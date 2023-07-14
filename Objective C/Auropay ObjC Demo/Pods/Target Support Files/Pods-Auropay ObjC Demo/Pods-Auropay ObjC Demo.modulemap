@@ -1,0 +1,6 @@
+framework module Pods_Auropay_ObjC_Demo {
+  umbrella header "Pods-Auropay ObjC Demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

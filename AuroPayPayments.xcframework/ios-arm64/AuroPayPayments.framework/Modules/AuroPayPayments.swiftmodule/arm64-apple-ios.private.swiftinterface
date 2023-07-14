@@ -1,0 +1,87 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AuroPayPayments
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AVKit
+import Accelerate
+import AudioToolbox
+import CarPlay
+import CommonCrypto
+import CoreGraphics
+import CoreImage
+import CoreText
+import Foundation
+import ImageIO
+import MobileCoreServices
+import QuartzCore
+import Security
+import Swift
+import SystemConfiguration
+import UIKit.UIFont
+import UIKit
+import Vision
+import VisionKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+infix operator |> : AdditionPrecedence
+@objc final public class APTheme : ObjectiveC.NSObject {
+  @objc public init(primaryColor: UIKit.UIColor, primaryTextColor: UIKit.UIColor, secondaryColor: UIKit.UIColor, secondaryTextColor: UIKit.UIColor)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers final public class Auropay : ObjectiveC.NSObject {
+  @objc final public func doPayment(displayViewController: UIKit.UIViewController, amount: Swift.Double, andDelegate delegate: AuroPayPayments.APPaymentCompletionProtocol, orderId: Swift.String = "")
+  @objc final public func doPayment(displayViewController: UIKit.UIViewController, amount: Swift.Double, andDelegateWithData delegate: AuroPayPayments.APPaymentCompletionProtocolWithData, orderId: Swift.String = "")
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers final public class AuroPayBuilder : ObjectiveC.NSObject {
+  @objc final public func merchantID(_ merchantID: Swift.String) -> AuroPayPayments.AuroPayBuilder
+  @objc final public func accessKey(_ accessKey: Swift.String) -> AuroPayPayments.AuroPayBuilder
+  @objc final public func secretKey(_ secretKey: Swift.String) -> AuroPayPayments.AuroPayBuilder
+  @objc final public func customerProfile(_ customerProfile: AuroPayPayments.CustomerProfile) -> AuroPayPayments.AuroPayBuilder
+  @objc final public func theme(_ theme: AuroPayPayments.APTheme?) -> AuroPayPayments.AuroPayBuilder
+  @objc final public func country(_ country: AuroPayPayments.Country) -> AuroPayPayments.AuroPayBuilder
+  @objc final public func showReceipt(_ flag: Swift.Bool) -> AuroPayPayments.AuroPayBuilder
+  @objc final public func allowCardScan(_ flag: Swift.Bool) -> AuroPayPayments.AuroPayBuilder
+  @objc final public func build() -> AuroPayPayments.Auropay
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol APPaymentCompletionProtocol : AuroPayPayments.AuroPayPaymentResultProtocol {
+  @objc func onPaymentSuccess(_ orderId: Swift.String, transactionStatus: Swift.Int, transactionId: Swift.String)
+  @objc func onPaymentError(_ message: Swift.String)
+}
+@objc public protocol APPaymentCompletionProtocolWithData : AuroPayPayments.AuroPayPaymentResultProtocol {
+  @objc func onPaymentSuccess(_ paymentData: AuroPayPayments.PaymentResultData)
+  @objc func onPaymentError(_ message: Swift.String)
+}
+@objc public protocol AuroPayPaymentResultProtocol {
+}
+@objc final public class CustomerProfile : ObjectiveC.NSObject {
+  @objc public init(title: Swift.String, firstName: Swift.String, middleName: Swift.String, lastName: Swift.String, phone: Swift.String, email: Swift.String)
+  @objc deinit
+}
+@objc final public class PaymentResultData : ObjectiveC.NSObject {
+  @objc final public var orderId: Swift.String
+  @objc final public var transactionId: Swift.String
+  @objc public init(orderId: Swift.String, transactionStatus: Swift.Int, transactionId: Swift.String, transactionDate: Swift.String, referenceNo: Swift.String, processMethod: Swift.Int, reasonMessage: Swift.String, amount: Swift.Double, convenienceFee: Swift.Double, taxAmount: Swift.Double, discountAmount: Swift.Double, captureAmount: Swift.Double)
+  @objc deinit
+}
+@objc public enum Country : Swift.Int {
+  case IN
+  case US
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension Foundation.Bundle : @unchecked Swift.Sendable {
+}
+infix operator +| : DefaultPrecedence
+infix operator +- : DefaultPrecedence
+extension AuroPayPayments.Country : Swift.Equatable {}
+extension AuroPayPayments.Country : Swift.Hashable {}
+extension AuroPayPayments.Country : Swift.RawRepresentable {}

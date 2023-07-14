@@ -1,0 +1,4 @@
+framework module AuroPayPayments {
+  header "AuroPayPayments-Swift.h"
+  requires objc
+}
