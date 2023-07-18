@@ -18,7 +18,7 @@ This repository contains sample application for Swift and Objective C to demonst
 ### Demo Project Setup
 - Clone the repository through Xcode or Git Bash as per your use case.
 
-- Add `pod 'auropay-payments-sandbox'` in pod file and run `pod install` from Auropay Swift DemoApp or Auropay ObjC Demo directory. 
+- Add `pod 'auropay-payments'` in pod file and run `pod install` from Auropay Swift DemoApp or Auropay ObjC Demo directory. 
 
 - Open the sample project's xcworkspace of your prefered language Swift/Objective C in Xcode.
 
