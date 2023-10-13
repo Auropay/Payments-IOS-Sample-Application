@@ -56,11 +56,14 @@
                      secondaryTextColor:[UIColor whiteColor]];
     
     //Initilize the AuropayBuilder with subdomain Id, accessKey and secretKey
-    Auropay * apb = [[[[[[[[[AuroPayBuilder alloc]
+    Auropay * apb = [[[[[[[[[[AuroPayBuilder alloc]
                             merchantID:@"Your Subdomain ID"]
                             accessKey:@"Your Access Key"]
                             secretKey:@"Your Secret Key"]
                             customerProfile:[self getCustomerProfile]]
+                            addEventListener:^(NSString* eventID, NSString* eventDesc) {
+                            NSLog(@"%@", [NSString stringWithFormat:@"eventID: %@, eventDesc: %@", eventID, eventDesc]);
+                            }]
                             theme:theme]
                             showReceipt:YES]
                             allowCardScan:YES]
@@ -68,7 +71,7 @@
 
     //Initiate payment
     if (_textFieldAmount.text && _textFieldAmount.text.length > 0){
-        [apb doPaymentWithDisplayViewController:self amount:[_textFieldAmount.text doubleValue] andDelegate:self orderId:@""];
+        [apb doPaymentWithDisplayViewController:self amount:[_textFieldAmount.text doubleValue] andDelegate:self referenceNumber:@"" askCustomerDetails:NO];
     }
 }
 

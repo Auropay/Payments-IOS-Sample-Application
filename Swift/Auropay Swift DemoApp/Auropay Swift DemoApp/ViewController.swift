@@ -67,6 +67,10 @@ class ViewController: UIViewController {
             .accessKey("Your Access Key")
             .secretKey("Your Secret Key")
             .customerProfile(self.getCustomerProfile())
+            .addEventListener({ eventID, eventMsg in
+                print("EventID:- \(eventID)")
+                print("EventMSG:- \(eventMsg)")
+            })
             .theme(theme)
             .showReceipt(true)
             .allowCardScan(true)
