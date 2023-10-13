@@ -33,6 +33,9 @@ This repository contains sample application for Swift and Objective C to demonst
             .accessKey("Your Access Key")
             .secretKey("Your Secret Key")
             .customerProfile(self.getCustomerProfile())
+            .addEventListener({(eventID, eventDesc) in
+                debugPrint("EventID: \(eventID), EventDescription: \(eventDesc)")
+            })
             .theme(theme)
             .showReceipt(true)
             .allowCardScan(true)
@@ -40,11 +43,14 @@ This repository contains sample application for Swift and Objective C to demonst
 ```
 - ### Objective C
 ```objective c 
-        [[[[[[[[[AuroPayBuilder alloc]
+        [[[[[[[[[[AuroPayBuilder alloc]
                             merchantID:@"Your Subdomain ID"]                                  
                             accessKey:@"Your Access Key"]
                             secretKey:@"Your Secret Key"]
                             customerProfile:[self getCustomerProfile]]
+                            addEventListener:^(NSString* eventID, NSString* eventDesc) {
+                              NSLog(@"%@", [NSString stringWithFormat:@"eventID: %@, eventDesc: %@", eventID, eventDesc]);
+                            }]
                             theme:theme]
                             showReceipt:YES]
                             allowCardScan:YES]

@@ -230,7 +230,9 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #endif
@@ -270,7 +272,7 @@ SWIFT_PROTOCOL("_TtP15AuroPayPayments27APPaymentCompletionProtocol_")
 SWIFT_PROTOCOL("_TtP15AuroPayPayments35APPaymentCompletionProtocolWithData_")
 @protocol APPaymentCompletionProtocolWithData <AuroPayPaymentResultProtocol>
 - (void)onPaymentSuccess:(PaymentResultData * _Nonnull)paymentData;
-- (void)onPaymentError:(NSString * _Nonnull)message;
+- (void)onPaymentError:(NSString * _Nonnull)message :(PaymentResultData * _Nullable)paymentData;
 @end
 
 @class UIColor;
@@ -292,6 +294,7 @@ SWIFT_CLASS("_TtC15AuroPayPayments14AuroPayBuilder")
 - (AuroPayBuilder * _Nonnull)accessKey:(NSString * _Nonnull)accessKey SWIFT_WARN_UNUSED_RESULT;
 - (AuroPayBuilder * _Nonnull)secretKey:(NSString * _Nonnull)secretKey SWIFT_WARN_UNUSED_RESULT;
 - (AuroPayBuilder * _Nonnull)customerProfile:(CustomerProfile * _Nonnull)customerProfile SWIFT_WARN_UNUSED_RESULT;
+- (AuroPayBuilder * _Nonnull)addEventListener:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))eventHandler SWIFT_WARN_UNUSED_RESULT;
 - (AuroPayBuilder * _Nonnull)theme:(APTheme * _Nullable)theme SWIFT_WARN_UNUSED_RESULT;
 - (AuroPayBuilder * _Nonnull)country:(enum Country)country SWIFT_WARN_UNUSED_RESULT;
 - (AuroPayBuilder * _Nonnull)showReceipt:(BOOL)flag SWIFT_WARN_UNUSED_RESULT;
@@ -306,9 +309,9 @@ SWIFT_CLASS("_TtC15AuroPayPayments14AuroPayBuilder")
 SWIFT_CLASS("_TtC15AuroPayPayments7Auropay")
 @interface Auropay : NSObject
 /// doPayment with APPaymentCompletionProtocol
-- (void)doPaymentWithDisplayViewController:(UIViewController * _Nonnull)displayViewController amount:(double)amount andDelegate:(id <APPaymentCompletionProtocol> _Nonnull)delegate orderId:(NSString * _Nonnull)orderId;
+- (void)doPaymentWithDisplayViewController:(UIViewController * _Nonnull)displayViewController amount:(double)amount andDelegate:(id <APPaymentCompletionProtocol> _Nonnull)delegate referenceNumber:(NSString * _Nullable)referenceNumber askCustomerDetails:(BOOL)askCustomerDetails;
 /// doPayment with APPaymentCompletionProtocolWithData
-- (void)doPaymentWithDisplayViewController:(UIViewController * _Nonnull)displayViewController amount:(double)amount andDelegateWithData:(id <APPaymentCompletionProtocolWithData> _Nonnull)delegate orderId:(NSString * _Nonnull)orderId;
+- (void)doPaymentWithDisplayViewController:(UIViewController * _Nonnull)displayViewController amount:(double)amount andDelegateWithData:(id <APPaymentCompletionProtocolWithData> _Nonnull)delegate referenceNumber:(NSString * _Nullable)referenceNumber askCustomerDetails:(BOOL)askCustomerDetails;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -353,6 +356,32 @@ SWIFT_CLASS("_TtC15AuroPayPayments15CustomerProfile")
 
 
 
+@class NSCoder;
+@class NSTextContainer;
+@class NSAttributedString;
+@class UIFont;
+@protocol UITextViewDelegate;
+
+/// @abstract UITextView with placeholder support
+SWIFT_CLASS("_TtC15AuroPayPayments10IQTextView") SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+@interface IQTextView : UITextView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer * _Nullable)textContainer OBJC_DESIGNATED_INITIALIZER;
+- (void)awakeFromNib;
+/// @abstract To set textView’s placeholder text color.
+@property (nonatomic, strong) IBInspectable UIColor * _Nullable placeholderTextColor;
+/// @abstract To set textView’s placeholder text. Default is nil.
+@property (nonatomic, copy) IBInspectable NSString * _Nullable placeholder;
+- (void)layoutSubviews;
+@property (nonatomic, copy) NSString * _Null_unspecified text;
+@property (nonatomic, strong) NSAttributedString * _Null_unspecified attributedText;
+@property (nonatomic, strong) UIFont * _Nullable font;
+@property (nonatomic) NSTextAlignment textAlignment;
+@property (nonatomic, weak) id <UITextViewDelegate> _Nullable delegate;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+@end
+
+
 
 
 
@@ -361,7 +390,17 @@ SWIFT_CLASS("_TtC15AuroPayPayments15CustomerProfile")
 SWIFT_CLASS("_TtC15AuroPayPayments17PaymentResultData")
 @interface PaymentResultData : NSObject
 @property (nonatomic, copy) NSString * _Nonnull orderId;
+@property (nonatomic) NSInteger transactionStatus;
 @property (nonatomic, copy) NSString * _Nonnull transactionId;
+@property (nonatomic, copy) NSString * _Nonnull transactionDate;
+@property (nonatomic, copy) NSString * _Nonnull referenceNo;
+@property (nonatomic) NSInteger processMethod;
+@property (nonatomic, copy) NSString * _Nonnull reasonMessage;
+@property (nonatomic) double amount;
+@property (nonatomic) double convenienceFee;
+@property (nonatomic) double taxAmount;
+@property (nonatomic) double discountAmount;
+@property (nonatomic) double captureAmount;
 - (nonnull instancetype)initWithOrderId:(NSString * _Nonnull)orderId transactionStatus:(NSInteger)transactionStatus transactionId:(NSString * _Nonnull)transactionId transactionDate:(NSString * _Nonnull)transactionDate referenceNo:(NSString * _Nonnull)referenceNo processMethod:(NSInteger)processMethod reasonMessage:(NSString * _Nonnull)reasonMessage amount:(double)amount convenienceFee:(double)convenienceFee taxAmount:(double)taxAmount discountAmount:(double)discountAmount captureAmount:(double)captureAmount OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -408,6 +447,11 @@ SWIFT_CLASS("_TtC15AuroPayPayments17PaymentResultData")
 
 
 
+SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+@interface UIViewController (SWIFT_EXTENSION(AuroPayPayments))
+/// This method is provided to override by viewController’s if the library lifts a viewController which you doesn’t want to lift . This may happen if you have implemented side menu feature in your app and the library try to lift the side menu controller. Overriding this method in side menu class to return correct controller should fix the problem.
+- (UIViewController * _Nullable)parentIQContainerViewController SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -652,7 +696,9 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #endif
@@ -692,7 +738,7 @@ SWIFT_PROTOCOL("_TtP15AuroPayPayments27APPaymentCompletionProtocol_")
 SWIFT_PROTOCOL("_TtP15AuroPayPayments35APPaymentCompletionProtocolWithData_")
 @protocol APPaymentCompletionProtocolWithData <AuroPayPaymentResultProtocol>
 - (void)onPaymentSuccess:(PaymentResultData * _Nonnull)paymentData;
-- (void)onPaymentError:(NSString * _Nonnull)message;
+- (void)onPaymentError:(NSString * _Nonnull)message :(PaymentResultData * _Nullable)paymentData;
 @end
 
 @class UIColor;
@@ -714,6 +760,7 @@ SWIFT_CLASS("_TtC15AuroPayPayments14AuroPayBuilder")
 - (AuroPayBuilder * _Nonnull)accessKey:(NSString * _Nonnull)accessKey SWIFT_WARN_UNUSED_RESULT;
 - (AuroPayBuilder * _Nonnull)secretKey:(NSString * _Nonnull)secretKey SWIFT_WARN_UNUSED_RESULT;
 - (AuroPayBuilder * _Nonnull)customerProfile:(CustomerProfile * _Nonnull)customerProfile SWIFT_WARN_UNUSED_RESULT;
+- (AuroPayBuilder * _Nonnull)addEventListener:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))eventHandler SWIFT_WARN_UNUSED_RESULT;
 - (AuroPayBuilder * _Nonnull)theme:(APTheme * _Nullable)theme SWIFT_WARN_UNUSED_RESULT;
 - (AuroPayBuilder * _Nonnull)country:(enum Country)country SWIFT_WARN_UNUSED_RESULT;
 - (AuroPayBuilder * _Nonnull)showReceipt:(BOOL)flag SWIFT_WARN_UNUSED_RESULT;
@@ -728,9 +775,9 @@ SWIFT_CLASS("_TtC15AuroPayPayments14AuroPayBuilder")
 SWIFT_CLASS("_TtC15AuroPayPayments7Auropay")
 @interface Auropay : NSObject
 /// doPayment with APPaymentCompletionProtocol
-- (void)doPaymentWithDisplayViewController:(UIViewController * _Nonnull)displayViewController amount:(double)amount andDelegate:(id <APPaymentCompletionProtocol> _Nonnull)delegate orderId:(NSString * _Nonnull)orderId;
+- (void)doPaymentWithDisplayViewController:(UIViewController * _Nonnull)displayViewController amount:(double)amount andDelegate:(id <APPaymentCompletionProtocol> _Nonnull)delegate referenceNumber:(NSString * _Nullable)referenceNumber askCustomerDetails:(BOOL)askCustomerDetails;
 /// doPayment with APPaymentCompletionProtocolWithData
-- (void)doPaymentWithDisplayViewController:(UIViewController * _Nonnull)displayViewController amount:(double)amount andDelegateWithData:(id <APPaymentCompletionProtocolWithData> _Nonnull)delegate orderId:(NSString * _Nonnull)orderId;
+- (void)doPaymentWithDisplayViewController:(UIViewController * _Nonnull)displayViewController amount:(double)amount andDelegateWithData:(id <APPaymentCompletionProtocolWithData> _Nonnull)delegate referenceNumber:(NSString * _Nullable)referenceNumber askCustomerDetails:(BOOL)askCustomerDetails;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -775,6 +822,32 @@ SWIFT_CLASS("_TtC15AuroPayPayments15CustomerProfile")
 
 
 
+@class NSCoder;
+@class NSTextContainer;
+@class NSAttributedString;
+@class UIFont;
+@protocol UITextViewDelegate;
+
+/// @abstract UITextView with placeholder support
+SWIFT_CLASS("_TtC15AuroPayPayments10IQTextView") SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+@interface IQTextView : UITextView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer * _Nullable)textContainer OBJC_DESIGNATED_INITIALIZER;
+- (void)awakeFromNib;
+/// @abstract To set textView’s placeholder text color.
+@property (nonatomic, strong) IBInspectable UIColor * _Nullable placeholderTextColor;
+/// @abstract To set textView’s placeholder text. Default is nil.
+@property (nonatomic, copy) IBInspectable NSString * _Nullable placeholder;
+- (void)layoutSubviews;
+@property (nonatomic, copy) NSString * _Null_unspecified text;
+@property (nonatomic, strong) NSAttributedString * _Null_unspecified attributedText;
+@property (nonatomic, strong) UIFont * _Nullable font;
+@property (nonatomic) NSTextAlignment textAlignment;
+@property (nonatomic, weak) id <UITextViewDelegate> _Nullable delegate;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+@end
+
+
 
 
 
@@ -783,7 +856,17 @@ SWIFT_CLASS("_TtC15AuroPayPayments15CustomerProfile")
 SWIFT_CLASS("_TtC15AuroPayPayments17PaymentResultData")
 @interface PaymentResultData : NSObject
 @property (nonatomic, copy) NSString * _Nonnull orderId;
+@property (nonatomic) NSInteger transactionStatus;
 @property (nonatomic, copy) NSString * _Nonnull transactionId;
+@property (nonatomic, copy) NSString * _Nonnull transactionDate;
+@property (nonatomic, copy) NSString * _Nonnull referenceNo;
+@property (nonatomic) NSInteger processMethod;
+@property (nonatomic, copy) NSString * _Nonnull reasonMessage;
+@property (nonatomic) double amount;
+@property (nonatomic) double convenienceFee;
+@property (nonatomic) double taxAmount;
+@property (nonatomic) double discountAmount;
+@property (nonatomic) double captureAmount;
 - (nonnull instancetype)initWithOrderId:(NSString * _Nonnull)orderId transactionStatus:(NSInteger)transactionStatus transactionId:(NSString * _Nonnull)transactionId transactionDate:(NSString * _Nonnull)transactionDate referenceNo:(NSString * _Nonnull)referenceNo processMethod:(NSInteger)processMethod reasonMessage:(NSString * _Nonnull)reasonMessage amount:(double)amount convenienceFee:(double)convenienceFee taxAmount:(double)taxAmount discountAmount:(double)discountAmount captureAmount:(double)captureAmount OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -830,6 +913,11 @@ SWIFT_CLASS("_TtC15AuroPayPayments17PaymentResultData")
 
 
 
+SWIFT_AVAILABILITY(ios_app_extension,unavailable)
+@interface UIViewController (SWIFT_EXTENSION(AuroPayPayments))
+/// This method is provided to override by viewController’s if the library lifts a viewController which you doesn’t want to lift . This may happen if you have implemented side menu feature in your app and the library try to lift the side menu controller. Overriding this method in side menu class to return correct controller should fix the problem.
+- (UIViewController * _Nullable)parentIQContainerViewController SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
