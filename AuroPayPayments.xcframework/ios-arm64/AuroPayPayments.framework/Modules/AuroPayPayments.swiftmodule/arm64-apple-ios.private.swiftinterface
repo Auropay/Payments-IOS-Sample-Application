@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AuroPayPayments
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AuroPayPayments
 import AVFoundation
 import AVKit
 import Accelerate
@@ -11,12 +10,14 @@ import CommonCrypto
 import CoreGraphics
 import CoreImage
 import CoreText
+import DeveloperToolsSupport
 import Foundation
 import ImageIO
 import MobileCoreServices
 import QuartzCore
 import Security
 import Swift
+import SwiftUI
 import SystemConfiguration
 import UIKit.UIFont
 import UIKit
@@ -25,19 +26,22 @@ import VisionKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 infix operator |> : AdditionPrecedence
 @objc final public class APTheme : ObjectiveC.NSObject {
   @objc public init(primaryColor: UIKit.UIColor, primaryTextColor: UIKit.UIColor, secondaryColor: UIKit.UIColor, secondaryTextColor: UIKit.UIColor)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers final public class Auropay : ObjectiveC.NSObject {
-  @objc final public func doPayment(displayViewController: UIKit.UIViewController, amount: Swift.Double, andDelegate delegate: AuroPayPayments.APPaymentCompletionProtocol, referenceNumber: Swift.String? = nil, askCustomerDetails: Swift.Bool = false)
-  @objc final public func doPayment(displayViewController: UIKit.UIViewController, amount: Swift.Double, andDelegateWithData delegate: AuroPayPayments.APPaymentCompletionProtocolWithData, referenceNumber: Swift.String? = nil, askCustomerDetails: Swift.Bool = false)
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+final public class Auropay : ObjectiveC.NSObject {
+  @objc final public func doPayment(displayViewController: UIKit.UIViewController, amount: Swift.Double, andDelegate delegate: any AuroPayPayments.APPaymentCompletionProtocol, referenceNumber: Swift.String? = nil, askCustomerDetails: Swift.Bool = false)
+  @objc final public func doPayment(displayViewController: UIKit.UIViewController, amount: Swift.Double, andDelegateWithData delegate: any AuroPayPayments.APPaymentCompletionProtocolWithData, referenceNumber: Swift.String? = nil, askCustomerDetails: Swift.Bool = false)
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers final public class AuroPayBuilder : ObjectiveC.NSObject {
-  @objc final public func merchantID(_ merchantID: Swift.String) -> AuroPayPayments.AuroPayBuilder
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+final public class AuroPayBuilder : ObjectiveC.NSObject {
+  @objc final public func subDomainId(_ merchantID: Swift.String) -> AuroPayPayments.AuroPayBuilder
   @objc final public func accessKey(_ accessKey: Swift.String) -> AuroPayPayments.AuroPayBuilder
   @objc final public func secretKey(_ secretKey: Swift.String) -> AuroPayPayments.AuroPayBuilder
   @objc final public func customerProfile(_ customerProfile: AuroPayPayments.CustomerProfile) -> AuroPayPayments.AuroPayBuilder
@@ -50,21 +54,26 @@ infix operator |> : AdditionPrecedence
   @objc override dynamic public init()
   @objc deinit
 }
+@available(iOS 13.0, *)
 @objc public protocol APPaymentCompletionProtocol : AuroPayPayments.AuroPayPaymentResultProtocol {
   @objc func onPaymentSuccess(_ orderId: Swift.String, transactionStatus: Swift.Int, transactionId: Swift.String)
   @objc func onPaymentError(_ message: Swift.String)
 }
+@available(iOS 13.0, *)
 @objc public protocol APPaymentCompletionProtocolWithData : AuroPayPayments.AuroPayPaymentResultProtocol {
   @objc func onPaymentSuccess(_ paymentData: AuroPayPayments.PaymentResultData)
   @objc func onPaymentError(_ message: Swift.String, _ paymentData: AuroPayPayments.PaymentResultData?)
 }
+@available(iOS 13.0, *)
 @objc public protocol AuroPayPaymentResultProtocol {
 }
-@objc final public class CustomerProfile : ObjectiveC.NSObject {
+@objc @available(iOS 13.0, *)
+final public class CustomerProfile : ObjectiveC.NSObject {
   @objc public init(title: Swift.String, firstName: Swift.String, middleName: Swift.String, lastName: Swift.String, phone: Swift.String, email: Swift.String)
   @objc deinit
 }
-@objc final public class PaymentResultData : ObjectiveC.NSObject {
+@objc @available(iOS 13.0, *)
+final public class PaymentResultData : ObjectiveC.NSObject {
   @objc final public var orderId: Swift.String
   @objc final public var transactionStatus: Swift.Int
   @objc final public var transactionId: Swift.String
@@ -81,51 +90,13 @@ infix operator |> : AdditionPrecedence
   @objc deinit
 }
 @available(iOSApplicationExtension, unavailable)
-@objc extension UIKit.UIViewController {
-  @objc @_Concurrency.MainActor(unsafe) dynamic open func parentIQContainerViewController() -> UIKit.UIViewController?
+@_Concurrency.MainActor @objc extension UIKit.UIViewController {
+  @objc @_Concurrency.MainActor dynamic open func iq_parentContainerViewController() -> UIKit.UIViewController?
 }
-@_inheritsConvenienceInitializers @available(iOSApplicationExtension, unavailable)
-@objc @_Concurrency.MainActor(unsafe) open class IQTextView : UIKit.UITextView {
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect, textContainer: UIKit.NSTextContainer?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func awakeFromNib()
-  @objc deinit
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var placeholderTextColor: UIKit.UIColor? {
-    @objc get
-    @objc set
-  }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var placeholder: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor(unsafe) open var attributedPlaceholder: Foundation.NSAttributedString? {
-    get
-    set
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var text: Swift.String! {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var attributedText: Foundation.NSAttributedString! {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var font: UIKit.UIFont? {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var textAlignment: UIKit.NSTextAlignment {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor(unsafe) @objc override weak dynamic open var delegate: UIKit.UITextViewDelegate? {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreFoundation.CGSize {
-    @objc get
-  }
+@available(iOSApplicationExtension, unavailable)
+@objc extension UIKit.UIViewController {
+  @objc @available(*, unavailable, renamed: "iq_parentContainerViewController()")
+  @_Concurrency.MainActor(unsafe) dynamic open func parentIQContainerViewController() -> UIKit.UIViewController?
 }
 @objc public enum Country : Swift.Int {
   case IN

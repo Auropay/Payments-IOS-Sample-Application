@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         
         //Initilize the AuropayBuilder with subdomain Id, accessKey and secretKey
         let apb = AuroPayBuilder()
-            .merchantID("Your Subdomain ID")
+            .subDomainId("Your Subdomain ID")
             .accessKey("Your Access Key")
             .secretKey("Your Secret Key")
             .customerProfile(self.getCustomerProfile())
