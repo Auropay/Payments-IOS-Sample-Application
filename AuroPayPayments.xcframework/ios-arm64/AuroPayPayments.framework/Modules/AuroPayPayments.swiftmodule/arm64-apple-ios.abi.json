@@ -19705,7 +19705,7 @@
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Scenes\/Home\/APHomeViewModel+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 26689,
+      "offset": 26702,
       "length": 1,
       "value": "0"
     },
@@ -33483,14 +33483,14 @@
       "kind": "StringLiteral",
       "offset": 468,
       "length": 7,
-      "value": "\"1.1.3\""
+      "value": "\"1.1.4\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 512,
       "length": 7,
-      "value": "\"1.1.2\""
+      "value": "\"1.1.3\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
@@ -33544,126 +33544,126 @@
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12270,
+      "offset": 12127,
       "length": 69,
       "value": "\"abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@-._\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 13018,
+      "offset": 12875,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13070,
+      "offset": 12927,
       "length": 18,
       "value": "\"Key.ShimmerLayer\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13115,
+      "offset": 12972,
       "length": 19,
       "value": "\"Key.TemplateLayer\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13218,
+      "offset": 13075,
       "length": 3,
       "value": "216"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13222,
+      "offset": 13079,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13234,
+      "offset": 13091,
       "length": 3,
       "value": "216"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13238,
+      "offset": 13095,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13249,
+      "offset": 13106,
       "length": 3,
       "value": "216"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13253,
+      "offset": 13110,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 13265,
+      "offset": 13122,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13309,
+      "offset": 13166,
       "length": 2,
       "value": "51"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13312,
+      "offset": 13169,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13324,
+      "offset": 13181,
       "length": 2,
       "value": "51"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13327,
+      "offset": 13184,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13338,
+      "offset": 13195,
       "length": 2,
       "value": "51"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13341,
+      "offset": 13198,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 13353,
+      "offset": 13210,
       "length": 3,
       "value": "1.0"
     },

@@ -29,7 +29,7 @@ This repository contains sample application for Swift and Objective C to demonst
 - ### Swift
 ```swift
             AuroPayBuilder()
-            .merchantID("Your Subdomain ID")
+            .subDomainId("Your Subdomain ID")
             .accessKey("Your Access Key")
             .secretKey("Your Secret Key")
             .customerProfile(self.getCustomerProfile())
@@ -44,7 +44,7 @@ This repository contains sample application for Swift and Objective C to demonst
 - ### Objective C
 ```objective c 
         [[[[[[[[[[AuroPayBuilder alloc]
-                            merchantID:@"Your Subdomain ID"]                                  
+                            subDomainId:@"Your Subdomain ID"]                                  
                             accessKey:@"Your Access Key"]
                             secretKey:@"Your Secret Key"]
                             customerProfile:[self getCustomerProfile]]
