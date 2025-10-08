@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AuroPayPayments
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AuroPayPayments
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import AVFoundation
 import AVKit
 import Accelerate
@@ -45,7 +46,7 @@ final public class AuroPayBuilder : ObjectiveC.NSObject {
   @objc final public func accessKey(_ accessKey: Swift.String) -> AuroPayPayments.AuroPayBuilder
   @objc final public func secretKey(_ secretKey: Swift.String) -> AuroPayPayments.AuroPayBuilder
   @objc final public func customerProfile(_ customerProfile: AuroPayPayments.CustomerProfile) -> AuroPayPayments.AuroPayBuilder
-  @objc final public func addEventListener(_ eventHandler: @escaping ((Swift.String, Swift.String) -> Swift.Void)) -> AuroPayPayments.AuroPayBuilder
+  @objc final public func addEventListener(_ eventHandler: @escaping (Swift.String, Swift.String) -> Swift.Void) -> AuroPayPayments.AuroPayBuilder
   @objc final public func theme(_ theme: AuroPayPayments.APTheme?) -> AuroPayPayments.AuroPayBuilder
   @objc final public func country(_ country: AuroPayPayments.Country) -> AuroPayPayments.AuroPayBuilder
   @objc final public func showReceipt(_ flag: Swift.Bool) -> AuroPayPayments.AuroPayBuilder
@@ -96,7 +97,7 @@ final public class PaymentResultData : ObjectiveC.NSObject {
 @available(iOSApplicationExtension, unavailable)
 @objc extension UIKit.UIViewController {
   @objc @available(*, unavailable, renamed: "iq_parentContainerViewController()")
-  @_Concurrency.MainActor(unsafe) dynamic open func parentIQContainerViewController() -> UIKit.UIViewController?
+  @_Concurrency.MainActor @preconcurrency dynamic open func parentIQContainerViewController() -> UIKit.UIViewController?
 }
 @objc public enum Country : Swift.Int {
   case IN

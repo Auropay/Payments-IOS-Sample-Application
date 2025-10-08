@@ -6,19 +6,19 @@
 	<dict>
 		<key>APAlert.nib</key>
 		<data>
-		aVlHJkq081qMdaS0MjipgoByUME=
+		wa/8S1closQu28fpujYbt5GmfLM=
 		</data>
 		<key>APBottomSheetCard.nib</key>
 		<data>
-		SbPNPEYfHpauGGcKm2F++Y339g4=
+		0CYH+L6v7bIwtPVVomUAGBMQnMM=
 		</data>
 		<key>APBottomSheetUPI.nib</key>
 		<data>
-		MNXJ5kArLzW1T5Y1rOoONBWbFdo=
+		I1IQu2mVt/ZecSToXnmNS4r4EjQ=
 		</data>
 		<key>APBottomSheetViewAll.nib</key>
 		<data>
-		bdqBuUGTlaOGJlJL78LV23nMy1E=
+		4agpTsV4/wQNucsj4mUSU3ZkM38=
 		</data>
 		<key>APCVVInfoDialog.nib</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>APCancelTransationAlert.nib</key>
 		<data>
-		dJ6lIlV6THD+yydNhSQoG8P3c+s=
+		cBCRDBfAEuPQri7kpGEmQH9xcyE=
 		</data>
 		<key>APCardScannerVC.nib</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>APCustomerProfileBottomSheet.nib</key>
 		<data>
-		OcYvZrk/V/vufsN8KiEOPi5w6J4=
+		VqAbyz6paOVdejVOvTeVK5teutw=
 		</data>
 		<key>APHomeVC.nib</key>
 		<data>
@@ -42,27 +42,27 @@
 		</data>
 		<key>APPaymentFailureAlert.nib</key>
 		<data>
-		bD6+YBzaPrw80Hfm7Q8Vvhm0os4=
+		y19FX2bQestk4X7uVzHKKm7g/fs=
 		</data>
 		<key>APPaymentFailureReceiptVC.nib/objects-14.0+.nib</key>
 		<data>
-		vsxmaZ3Pk5ixgr4+XsxceqQSpxs=
+		RacFAgqo8szE7LGh0RAbIDEKqIA=
 		</data>
 		<key>APPaymentFailureReceiptVC.nib/runtime.nib</key>
 		<data>
-		K6INb5hEK8km1N5sUJravmFwKhY=
+		UKwTrCZaj/6jjA6VzP9YClopzMs=
 		</data>
 		<key>APPaymentSuccessAlert.nib</key>
 		<data>
-		DI5vt90rVIX/rfuaQcjLQi/+kVk=
+		s4taOBoRCbv0fv+cqgR5I+kwe7k=
 		</data>
 		<key>APPaymentSuccessReceiptVC.nib/objects-14.0+.nib</key>
 		<data>
-		t5SwjgP03ApdFyXyLAggT9TbTmY=
+		vMM5b1QFJ/0vwZG4Osqf59wrIlk=
 		</data>
 		<key>APPaymentSuccessReceiptVC.nib/runtime.nib</key>
 		<data>
-		wz/x5mrsVSfSrV2PmmmXJxaLtTA=
+		6r2leX9AUKN4OV7rt6tCB2Kz7JQ=
 		</data>
 		<key>APWaitingVC.nib</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		HPtSlpIxFNq5kAsdz9tsFQIEkEM=
+		RIToFKPBDRb21PHh8HCdD6PVlGM=
 		</data>
 		<key>AuroDialog.nib</key>
 		<data>
-		ctNmdxtoBxsMM2lNEApbIlW/OuE=
+		PCwEX4AjQq7/1aRkofIBIbqXaDA=
 		</data>
 		<key>CPAdditionalFieldsCell.nib</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>CPFooterView.nib</key>
 		<data>
-		wj5CsiIH1C9bpeIHctYeJ7bxlwU=
+		QXk+3wv9cnlvBlQqZCPJWflt7BQ=
 		</data>
 		<key>CPPrimaryFieldsCell.nib</key>
 		<data>
@@ -94,11 +94,11 @@
 		</data>
 		<key>DBCCTableViewCell.nib</key>
 		<data>
-		Q5pgCQ89cDi+Z7P3DkuA5OBzAxQ=
+		aavUREBJ+Qryn6yr+QN5lGGOvuk=
 		</data>
 		<key>FooterView.nib</key>
 		<data>
-		XfHzLgXRU64GhC2+yUpdPI0wIak=
+		P4rzulTIvuGFd6ckLFeRdi5zAu8=
 		</data>
 		<key>Headers/AuroPay.h</key>
 		<data>
@@ -106,51 +106,51 @@
 		</data>
 		<key>Headers/AuroPayPayments-Swift.h</key>
 		<data>
-		PLwQQS5G/Iit4JBzD9iLONxtZnQ=
+		wrbNb14GKdKfqfqTGvKvb4VT+dA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ql9IRoT2X9T8tFlQ7r/cW0jJx0A=
+		d5ttnrFPgkh9dNm3DHMRVZYGEwM=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ljcWtSV8yQIWyF5xPFNcMx08MHs=
+		VYoDe/gkAvoa4pIqvQ4HOPXppqk=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Uulixw6DUkwDgl7QiX3FHYzZcwA=
+		FSflOldegFwgWvFaUJ/x2tdEKlU=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		TD8V/zHwdr66PkaqlSBGiB1ox9M=
+		mLZi87ONcriKh/S4pO5ztPNu254=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Uulixw6DUkwDgl7QiX3FHYzZcwA=
+		FSflOldegFwgWvFaUJ/x2tdEKlU=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DEr0MUfO8fkXHT4BCQW/vBHiiUU=
+		VZ8SZZFq8qGbgGJYCII5voS8YXk=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ljcWtSV8yQIWyF5xPFNcMx08MHs=
+		VYoDe/gkAvoa4pIqvQ4HOPXppqk=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		6koHLORMpKhTYMwM268r5Y8pgRM=
+		lDF9ORmWn336357YtWFWZvKCk0M=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		YKSu4cWt2kS0Oo4PzJfw20SfRPw=
+		617MxAFA9kAMRwDGYsOuidFfsh4=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		6koHLORMpKhTYMwM268r5Y8pgRM=
+		lDF9ORmWn336357YtWFWZvKCk0M=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bOkIfBFE0xcf2rNrc0moUwxndyg=
+		zTbkuaro4BQ4/0i6lHRaoxYI/rk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -162,11 +162,11 @@
 		</data>
 		<key>NetbankingTableViewCell.nib/objects-14.0+.nib</key>
 		<data>
-		3JypJUgLMY5EfV7RLM6+WbJDGLg=
+		WxAXvN26DMj1NYQLwGFcL/7xK7M=
 		</data>
 		<key>NetbankingTableViewCell.nib/runtime.nib</key>
 		<data>
-		akgqQOEUvcBP1OrqeIDDRbLpOyE=
+		OdVCI/QHIvCHBkRMWD9Wst7D5EA=
 		</data>
 		<key>NoMoreDataCell.nib</key>
 		<data>
@@ -242,11 +242,11 @@
 		</data>
 		<key>WalletTableViewCell.nib/objects-14.0+.nib</key>
 		<data>
-		5Yq5+5cB1Z9yBBrQg4sXRcGgz8c=
+		xkrg3zOkk++xNuErSi6G5IGJbbg=
 		</data>
 		<key>WalletTableViewCell.nib/runtime.nib</key>
 		<data>
-		UFwZtKL0aQslhaOFWdkyJpVZm+4=
+		IBfKg5ikX8PMn2emSYy+CJw0iZc=
 		</data>
 		<key>connection_error.json</key>
 		<data>
@@ -260,7 +260,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G8OEoDN5Lw5cxe5KTR0+fG5Szto=
+			ViVMSRU2x59EfIKEwZK7B2SIEEE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -300,28 +300,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			37tYq6lB1r4oUvQ6EDvMIqGCfZ1cENxqrkl+jrByLJM=
+			YBftXNCCe2OlRErzTY2yddV1X6GL1Y/kq2+vo06XTeY=
 			</data>
 		</dict>
 		<key>APBottomSheetCard.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3fms7ut6e3p7Cp/U9K20HMP+PWdKrwnRFQAGgGH0ZIw=
+			vB2qHV5uWRix1A5Vln4aNIb2DQZhTGdA60IdTHK6O2s=
 			</data>
 		</dict>
 		<key>APBottomSheetUPI.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/DBGML77xPIOVnIZ4S4tE8OppfoOAsuvdoxZt1s+sTo=
+			ckQnauR0vHmzr7hRVxsTveBXD9AeFBkFddThTcsSzQk=
 			</data>
 		</dict>
 		<key>APBottomSheetViewAll.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			weuXfTzx3fgiekcIv2Y4A5daIctGXjCmShmoZFczT3Y=
+			TPqVY1wlFCblqvsgObOkKII36EKlDAuwJ5AKG33Bmic=
 			</data>
 		</dict>
 		<key>APCVVInfoDialog.nib</key>
@@ -335,7 +335,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AyWWNTgYPcsq/cm08j4IGFpcByQLdal+OS0Sh5+P1FE=
+			DEU+vxzLAUQOHH+nS/0z1HHsPjywjyrgryfVsssa9qE=
 			</data>
 		</dict>
 		<key>APCardScannerVC.nib</key>
@@ -349,7 +349,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kzbRjuH1KQIC9yoq3avb5eRxuJ97rbFB5C5UlokThak=
+			0EBhWkMldm4iw5FWiUheAbYMfhMhgqcRivkCcTMtvZE=
 			</data>
 		</dict>
 		<key>APHomeVC.nib</key>
@@ -363,42 +363,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N06H94z7t+E4tXiA9ewPzwCy/w7kM7c9h6MurC57KLI=
+			Y4ISudfqw6+3/9NMUiJqnaXoPKAtQPRADSImEsn0xmI=
 			</data>
 		</dict>
 		<key>APPaymentFailureReceiptVC.nib/objects-14.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ypp7zAGCqcKZ+wJXJT4HnrCFKX+E1JfUbz6fVUbuGYo=
+			8gfDeKrqJDrfcHOdQoLANzoypTFKhYfrB0YmTSNuS7g=
 			</data>
 		</dict>
 		<key>APPaymentFailureReceiptVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SZfJZcxpGjwqquWE8b5j5k22uir55Yn7s407cIPDtL0=
+			ZtZYtWe5WGRz89xoIQNRgAGP4ryU5uiZYloAVz96N1Q=
 			</data>
 		</dict>
 		<key>APPaymentSuccessAlert.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0GbLoDr/7YzCq0CMPKfTZxhlvAOhmUEEcF04K/HybDk=
+			smXLoq+G3StL9wIRE8PAtC1zScy/40eSK0kU4We+FRA=
 			</data>
 		</dict>
 		<key>APPaymentSuccessReceiptVC.nib/objects-14.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UrNlsjpjhxj7tneBBXmWHHGB4Wk7+atncNSlxjG+rvE=
+			VQemDdyMFb4Rj4Zo839WddIUKHP6ReNK9E4Q46YTKZg=
 			</data>
 		</dict>
 		<key>APPaymentSuccessReceiptVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vHocaIOIeXD7fc3nvsESbqbwlzEQ0Mbx0x2EzThJssw=
+			XcywCugzR37I2dpb0qEXG0XvmXOvQfJKYm3C4WogJ6k=
 			</data>
 		</dict>
 		<key>APWaitingVC.nib</key>
@@ -419,14 +419,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			twedt8UXPEfU8WED8dZp+c+YbukTG55NkKQao5hdCjE=
+			QdFNKG6BtKeZ/JoeTBe2RaZyh9Peu8CSt9Zy58FAl2s=
 			</data>
 		</dict>
 		<key>AuroDialog.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T2ubmnjvOZxWTftlvd37tAHoqepwAzdMLYZNRii4iRI=
+			LvXv01GmUGK1+oSttdUNO68BnZxU24PyvSzaqCn7CUk=
 			</data>
 		</dict>
 		<key>CPAdditionalFieldsCell.nib</key>
@@ -440,7 +440,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kMeK0Hv+KJaEKLBNL7a4m5fRkzlEmSO3KKVoWGrldBQ=
+			vPL3DwqtUglyBqGXjv3+N2PtGt0fMgueERdBDKWO0FE=
 			</data>
 		</dict>
 		<key>CPPrimaryFieldsCell.nib</key>
@@ -454,14 +454,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TW+X2Oz4beNWCqebC8c51PVlKHkvM+OTIJc8VqJ/oBo=
+			Gt+dSl2MqRrHBHrih1Zvb7nnPiGShqE5tX69yL2dhWw=
 			</data>
 		</dict>
 		<key>FooterView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ciUNSFw0sBscuHpnu6FDWLOjAofcciA2Bk8XAcFXmP4=
+			1vpIUHGh7XjYbZWTik/Eip6qt7mnYISbebOZchA4AAk=
 			</data>
 		</dict>
 		<key>Headers/AuroPay.h</key>
@@ -475,77 +475,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eaOc51k3w1MPS/eTIlAqJXC5MykkHCCAV8mldOKE78Y=
+			fw/jftzZRWLQaqfq5xeCQEnOxuvvLQyeoI4FJ14cyx8=
 			</data>
 		</dict>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			35Rj7s1V8EpExX1AHTpfDWXNDmgtLmnXDQ4JK6lEZak=
+			xMIWf+sxCW5yh2SiDVhqqIDwlWTqc6GZ5CLQ0+s9rKU=
 			</data>
 		</dict>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y7lgLgiXwMHxgrAVbZOsB7WfVvYLrGuDB0/EZXtm+aU=
+			CVc9jGuVmTOBOc7y7DdaeaNPuK77qojxWqZNxGx+6Dk=
 			</data>
 		</dict>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ubaSsQnWhc8cB25EoK7cXsfhTOEEgXHQjnfIIiDfLmw=
+			/8UNwprhhAcvkcajBydHZINsctJaamHoZaQtp5cmJ2s=
 			</data>
 		</dict>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y7lgLgiXwMHxgrAVbZOsB7WfVvYLrGuDB0/EZXtm+aU=
+			CVc9jGuVmTOBOc7y7DdaeaNPuK77qojxWqZNxGx+6Dk=
 			</data>
 		</dict>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			57muDJFzw/rjcMB/ea3oKQJwDtox3tfkkX1mne26uWw=
+			BElwly7IX8SIz4HB9isKmvzwYumJUscGnnxLF4CqIpI=
 			</data>
 		</dict>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			35Rj7s1V8EpExX1AHTpfDWXNDmgtLmnXDQ4JK6lEZak=
+			xMIWf+sxCW5yh2SiDVhqqIDwlWTqc6GZ5CLQ0+s9rKU=
 			</data>
 		</dict>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o7zEPbFBUMeocI7REpKBEjAOMrXxMEsRw3/jmbhEyZU=
+			2trNvZd1m1IJ0fV+1N8LhCITxmvZq+ODQvxa4eZGhNY=
 			</data>
 		</dict>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EXKMu/VtodgQ8F0bUtUHUjDoW9xR2aFlWTEPSy9Uml0=
+			PuG06dLojOD0z3IG/b+jGyMc0xlvYc9ScF1NcVZW0sY=
 			</data>
 		</dict>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o7zEPbFBUMeocI7REpKBEjAOMrXxMEsRw3/jmbhEyZU=
+			2trNvZd1m1IJ0fV+1N8LhCITxmvZq+ODQvxa4eZGhNY=
 			</data>
 		</dict>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4YsOLvMXM1YC6B/PblRuvIosnYoJw+2LZVELGkYWkdI=
+			/rG9rlg/sYGf+kOO+k5IwHZEHJAvLXHQQEREyXMOjJI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -566,14 +566,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			axhaVeFo16Z+FbuzDs44s0vOJplXF+aZ/btcXl24klA=
+			Z7+edpw9jOghrUE4R+fAh+ISoCXnti+b6LZOpKtoQB4=
 			</data>
 		</dict>
 		<key>NetbankingTableViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m/TbJophtTl6ZxaW23jLMprMkFgyhqUb96wD4Gc9MoI=
+			xstWsPmDsVEeyCtvfl2dIOdyg2j6fGqvm/W7Vl8iECw=
 			</data>
 		</dict>
 		<key>NoMoreDataCell.nib</key>
@@ -706,14 +706,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Au5g/LA8DHvy/9tkQOreNlAu8G1oY2F44c/TYP2ajQQ=
+			I0mepY3lEesiaCFQvSfCesfEt+Y5SPSRAQfAUTShu0Y=
 			</data>
 		</dict>
 		<key>WalletTableViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TBvFQK4Cy/t6B/AkxJY2RXRkRUSGHwm34VtN59HxBcA=
+			QI3256FcTPHkBkVjh2elrsP+1js3xYC6s4z+HH6JfBY=
 			</data>
 		</dict>
 		<key>connection_error.json</key>
@@ -734,7 +734,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cIPz/vn6woKcpDb5rF6bmUSQZuVfxJpWeMO9oA+qiJw=
+			qqhwVajaic3QxzsCVNL0dkHkukynCeQqrKPFNPVdLd4=
 			</data>
 			<key>optional</key>
 			<true/>
