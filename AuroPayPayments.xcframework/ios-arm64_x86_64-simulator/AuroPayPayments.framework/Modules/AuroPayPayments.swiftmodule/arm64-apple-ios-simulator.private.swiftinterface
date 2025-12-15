@@ -90,15 +90,6 @@ final public class PaymentResultData : ObjectiveC.NSObject {
   @objc public init(orderId: Swift.String, transactionStatus: Swift.Int, transactionId: Swift.String, transactionDate: Swift.String, referenceNo: Swift.String, processMethod: Swift.Int, reasonMessage: Swift.String, amount: Swift.Double, convenienceFee: Swift.Double, taxAmount: Swift.Double, discountAmount: Swift.Double, captureAmount: Swift.Double)
   @objc deinit
 }
-@available(iOSApplicationExtension, unavailable)
-@_Concurrency.MainActor @objc extension UIKit.UIViewController {
-  @objc @_Concurrency.MainActor dynamic open func iq_parentContainerViewController() -> UIKit.UIViewController?
-}
-@available(iOSApplicationExtension, unavailable)
-@objc extension UIKit.UIViewController {
-  @objc @available(*, unavailable, renamed: "iq_parentContainerViewController()")
-  @_Concurrency.MainActor @preconcurrency dynamic open func parentIQContainerViewController() -> UIKit.UIViewController?
-}
 @objc public enum Country : Swift.Int {
   case IN
   case US

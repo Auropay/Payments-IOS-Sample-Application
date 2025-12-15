@@ -282,7 +282,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import ObjectiveC;
-@import UIKit;
 #endif
 
 #endif
@@ -388,21 +387,6 @@ SWIFT_CLASS("_TtC15AuroPayPayments17PaymentResultData") SWIFT_AVAILABILITY(ios,i
 - (nonnull instancetype)initWithOrderId:(NSString * _Nonnull)orderId transactionStatus:(NSInteger)transactionStatus transactionId:(NSString * _Nonnull)transactionId transactionDate:(NSString * _Nonnull)transactionDate referenceNo:(NSString * _Nonnull)referenceNo processMethod:(NSInteger)processMethod reasonMessage:(NSString * _Nonnull)reasonMessage amount:(double)amount convenienceFee:(double)convenienceFee taxAmount:(double)taxAmount discountAmount:(double)discountAmount captureAmount:(double)captureAmount OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_AVAILABILITY(ios_app_extension,unavailable)
-@interface UIViewController (SWIFT_EXTENSION(AuroPayPayments))
-- (UIViewController * _Nullable)parentIQContainerViewController SWIFT_WARN_UNUSED_RESULT SWIFT_UNAVAILABLE_MSG("'parentIQContainerViewController' has been renamed to 'iq_parentContainerViewController'");
-@end
-
-SWIFT_AVAILABILITY(ios_app_extension,unavailable)
-@interface UIViewController (SWIFT_EXTENSION(AuroPayPayments))
-/// This method is provided to override by viewController’s
-/// if the library lifts a viewController which you doesn’t want to lift.
-/// This may happen if you have implemented side menu feature
-/// in your app and the library try to lift the side menu controller.
-/// Overriding this method in side menu class to return correct controller should fix the problem.
-- (UIViewController * _Nullable)iq_parentContainerViewController SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #endif
