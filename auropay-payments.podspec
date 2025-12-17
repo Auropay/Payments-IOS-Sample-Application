@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "auropay-payments"
-  spec.version      = "1.2.3"
+  spec.version      = "1.2.4"
   spec.summary      = "AuroPay's Payments SDK."
 
   spec.description  = <<-DESC

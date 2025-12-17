@@ -16063,56 +16063,49 @@
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/DataProvider\/ServiceCall&Model\/Payment.swift",
       "kind": "StringLiteral",
-      "offset": 5768,
+      "offset": 5801,
       "length": 12,
       "value": "\"merchantId\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/DataProvider\/ServiceCall&Model\/Payment.swift",
       "kind": "StringLiteral",
-      "offset": 5856,
+      "offset": 5889,
       "length": 21,
       "value": "\"EncryptedTenderInfo\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/DataProvider\/ServiceCall&Model\/Payment.swift",
       "kind": "StringLiteral",
-      "offset": 5930,
+      "offset": 5963,
       "length": 12,
       "value": "\"trackingId\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/DataProvider\/ServiceCall&Model\/Payment.swift",
       "kind": "StringLiteral",
-      "offset": 5994,
+      "offset": 6027,
       "length": 10,
       "value": "\"Currency\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/DataProvider\/ServiceCall&Model\/Payment.swift",
       "kind": "StringLiteral",
-      "offset": 6032,
-      "length": 13,
-      "value": "\"ChannelType\""
-    },
-    {
-      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/DataProvider\/ServiceCall&Model\/Payment.swift",
-      "kind": "StringLiteral",
-      "offset": 6388,
+      "offset": 6434,
       "length": 9,
       "value": "\"orderId\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/DataProvider\/ServiceCall&Model\/Payment.swift",
       "kind": "StringLiteral",
-      "offset": 6474,
+      "offset": 6520,
       "length": 11,
       "value": "\"paymentId\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/DataProvider\/ServiceCall&Model\/Payment.swift",
       "kind": "StringLiteral",
-      "offset": 6541,
+      "offset": 6587,
       "length": 11,
       "value": "\"intentUrl\""
     },
@@ -22440,28 +22433,28 @@
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Scenes\/Home\/UITableViewCell\/SavedPaymentOptions\/SavedPaymentOptionsCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 20047,
+      "offset": 20107,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Scenes\/Home\/UITableViewCell\/SavedPaymentOptions\/SavedPaymentOptionsCell.swift",
       "kind": "FloatLiteral",
-      "offset": 20088,
+      "offset": 20148,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Scenes\/Home\/UITableViewCell\/SavedPaymentOptions\/SavedPaymentOptionsCell.swift",
       "kind": "StringLiteral",
-      "offset": 20180,
+      "offset": 20240,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Scenes\/Home\/UITableViewCell\/SavedPaymentOptions\/SavedPaymentOptionsCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 20253,
+      "offset": 20313,
       "length": 5,
       "value": "false"
     },
@@ -27993,14 +27986,14 @@
       "kind": "StringLiteral",
       "offset": 468,
       "length": 7,
-      "value": "\"1.2.3\""
+      "value": "\"1.2.4\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 512,
       "length": 7,
-      "value": "\"1.2.3\""
+      "value": "\"1.2.4\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",

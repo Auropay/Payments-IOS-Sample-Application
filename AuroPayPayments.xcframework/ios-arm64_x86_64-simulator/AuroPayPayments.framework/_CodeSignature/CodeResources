@@ -110,11 +110,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OrGhRzVhDZn7FbTP8ckOES9QV1o=
+		mJnH0rNwI49XNfu3GuV91XGi7qg=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		KbQRj7VOgYbeUjfbyRPA45kT78w=
+		i+GUUzdso8ztbgMjuM/RURgh2zo=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -130,11 +130,11 @@
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yOY5XXcsupKmh7IIVEFY1oE0mBM=
+		Dlnb0OZQrJrvLIaNfhdnUMf2IZ0=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		KbQRj7VOgYbeUjfbyRPA45kT78w=
+		i+GUUzdso8ztbgMjuM/RURgh2zo=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -150,7 +150,7 @@
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mUWqEbUiuesasioeA9/YKItI2jA=
+		w2+pC9nGCdmpcQJPF7MiAiQgyRg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -482,7 +482,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kCwJ1wq2V/VWkiPZNdPg7E/oatNs51pJnR1yzInQFO8=
+			21jV6qwo2uLTmkMZCJ8Q4aQBf/OzZqpbtiqnXFNcXRI=
 			</data>
 		</dict>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -510,14 +510,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2hKOLrBMs2tMjFf9dLyKXKPD5jqc7cgQId7ToJJieFk=
+			n63iR0Hw1SE4YXa20F1cfmRUN+YpKixYq2EygiGhOfA=
 			</data>
 		</dict>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kCwJ1wq2V/VWkiPZNdPg7E/oatNs51pJnR1yzInQFO8=
+			21jV6qwo2uLTmkMZCJ8Q4aQBf/OzZqpbtiqnXFNcXRI=
 			</data>
 		</dict>
 		<key>Modules/AuroPayPayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -545,7 +545,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZAh83DbO6bJhLNEo5444NqEUFCK+sHDOAGJnpoHN2yw=
+			pEpUsd9xRX36LqAhX/i9Y4kXlkadcrIDZpEGrjk0ob8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -110,11 +110,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qmVs/bMP5aC575OkxTNQBD/0v/g=
+		pNsYg0OnZcRHufdXJtNjG7fnhLw=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		fGb1AQak0qxTlRrJT0qgTgUfCDQ=
+		zgokhcknnYgsbk47eY0edElUNTU=
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		J6Co6uRVQJ3XpcadgHixvH1IiMs=
+		HqU0Ty7T/8GYKnYWhk10uTMoLw0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -462,7 +462,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3EO+fF1Z/VbVQvwmx9gkIFkxNBtnJIJB8f7GWyO1u2w=
+			fwiW8hgDl8tgx7MJque5ObFEQ/EeNBWGt8vQ+RpKyDo=
 			</data>
 		</dict>
 		<key>Modules/AuroPayPayments.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -490,7 +490,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4wsOKie+UksYwIHO03PLocECJioEslDPWAFt/j2rM1Y=
+			qv2xa8WuY6hzJoYGpFn9caXd4jKPa8rLja+/nTgqUsU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
