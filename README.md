@@ -15,6 +15,22 @@ This repository contains sample application for Swift and Objective C to demonst
 
 <br/>
 
+## iOS configuration
+    To provide UPI payments on iOS you need to enable the following permissions in your app. Open the info.plist
+    file and add below content:
+    
+```
+        <key>LSApplicationQueriesSchemes</key>
+        </array>
+            <string>phonepe</string>
+            <string>tez</string>
+            <string>paytmmp</string>
+            <string>credpay</string>
+        </array>
+```
+
+<br/>
+
 ### Demo Project Setup
 - Clone the repository through Xcode or Git Bash as per your use case.
 

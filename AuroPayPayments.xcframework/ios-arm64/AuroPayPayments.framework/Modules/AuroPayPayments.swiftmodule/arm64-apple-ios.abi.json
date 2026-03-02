@@ -7863,6 +7863,7 @@
         "intro_tvOS": "9.0",
         "intro_watchOS": "2.0",
         "declAttributes": [
+          "AddressableForDependencies",
           "Frozen",
           "Available",
           "Available",
@@ -8228,6 +8229,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sequence",
             "printedName": "Sequence",
             "children": [
@@ -8393,21 +8401,14 @@
         "usr": "s:Sq",
         "mangledName": "$sSq",
         "moduleName": "Swift",
-        "genericSig": "<τ_0_0 where τ_0_0 : ~Copyable>",
-        "sugared_genericSig": "<Wrapped where Wrapped : ~Copyable>",
+        "genericSig": "<τ_0_0 where τ_0_0 : ~Copyable, τ_0_0 : ~Escapable>",
+        "sugared_genericSig": "<Wrapped where Wrapped : ~Copyable, Wrapped : ~Escapable>",
         "declAttributes": [
           "Frozen"
         ],
         "isExternal": true,
         "isEnumExhaustive": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -8431,10 +8432,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -8442,6 +8443,20 @@
             "printedName": "BitwiseCopyable",
             "usr": "s:s15BitwiseCopyableP",
             "mangledName": "$ss15BitwiseCopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -8543,6 +8558,47 @@
           },
           {
             "kind": "Conformance",
+            "name": "AttributedTextFormattingDefinition",
+            "printedName": "AttributedTextFormattingDefinition",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUICore.AttributedTextFormattingDefinition<Wrapped.Scope>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AttributedTextFormattingDefinition",
+                        "printedName": "SwiftUICore.AttributedTextFormattingDefinition",
+                        "usr": "s:7SwiftUI34AttributedTextFormattingDefinitionP"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Scope",
+                "printedName": "Scope",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Scope"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI34AttributedTextFormattingDefinitionP",
+            "mangledName": "$s7SwiftUI34AttributedTextFormattingDefinitionP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Gesture",
             "printedName": "Gesture",
             "children": [
@@ -8596,6 +8652,27 @@
             ],
             "usr": "s:7SwiftUI4ViewP",
             "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AtomicRepresentable",
+            "printedName": "AtomicRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AtomicRepresentation",
+                "printedName": "AtomicRepresentation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.AtomicOptionalRepresentation"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:15Synchronization19AtomicRepresentableP",
+            "mangledName": "$s15Synchronization19AtomicRepresentableP"
           },
           {
             "kind": "Conformance",
@@ -8737,6 +8814,55 @@
             ],
             "usr": "s:7SwiftUI15TableRowContentP",
             "mangledName": "$s7SwiftUI15TableRowContentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SliderTickContent",
+            "printedName": "SliderTickContent",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Value",
+                "printedName": "Value",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Value"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SwiftUI.SliderTick<τ_0_0.Value>]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SliderTick",
+                        "printedName": "SwiftUI.SliderTick<τ_0_0.Value>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DependentMember",
+                            "printedName": "τ_0_0.Value"
+                          }
+                        ],
+                        "usr": "s:7SwiftUI10SliderTickV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI17SliderTickContentP",
+            "mangledName": "$s7SwiftUI17SliderTickContentP"
           },
           {
             "kind": "Conformance",
@@ -9314,6 +9440,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Encodable",
             "printedName": "Encodable",
             "usr": "s:SE",
@@ -9332,35 +9465,6 @@
             "printedName": "_HasContiguousBytes",
             "usr": "s:s19_HasContiguousBytesP",
             "mangledName": "$ss19_HasContiguousBytesP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSArray",
-                    "printedName": "Foundation.NSArray",
-                    "usr": "c:objc(cs)NSArray"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
@@ -9458,6 +9562,35 @@
           },
           {
             "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
             "name": "AccelerateMutableBuffer",
             "printedName": "AccelerateMutableBuffer",
             "usr": "s:10Accelerate0A13MutableBufferP",
@@ -9483,6 +9616,41 @@
             ],
             "usr": "s:10Accelerate0A6BufferP",
             "mangledName": "$s10Accelerate0A6BufferP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "OperationParameter",
+            "printedName": "OperationParameter",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Accelerate9BNNSGraphO7BuilderV18OperationParameterP",
+            "mangledName": "$s10Accelerate9BNNSGraphO7BuilderV18OperationParameterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Content",
+            "printedName": "Content",
+            "usr": "s:So17CMSampleBufferRefa9CoreMediaE7ContentP",
+            "mangledName": "$sSo17CMSampleBufferRefa9CoreMediaE7ContentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ContentWithFormatDescription",
+            "printedName": "ContentWithFormatDescription",
+            "usr": "s:So17CMSampleBufferRefa9CoreMediaE28ContentWithFormatDescriptionP",
+            "mangledName": "$sSo17CMSampleBufferRefa9CoreMediaE28ContentWithFormatDescriptionP"
           }
         ]
       },
@@ -9842,6 +10010,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -10065,6 +10240,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -10360,6 +10542,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Strideable",
             "printedName": "Strideable",
             "children": [
@@ -10540,6 +10729,57 @@
           },
           {
             "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VectorArithmetic",
+            "printedName": "VectorArithmetic",
+            "usr": "s:7SwiftUI16VectorArithmeticP",
+            "mangledName": "$s7SwiftUI16VectorArithmeticP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Animatable",
+            "printedName": "Animatable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AnimatableData",
+                "printedName": "AnimatableData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI10AnimatableP",
+            "mangledName": "$s7SwiftUI10AnimatableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "vDSP_FloatingPointConvertable",
             "printedName": "vDSP_FloatingPointConvertable",
             "usr": "s:10Accelerate29vDSP_FloatingPointConvertableP",
@@ -10620,54 +10860,25 @@
           },
           {
             "kind": "Conformance",
-            "name": "_FormatSpecifiable",
-            "printedName": "_FormatSpecifiable",
+            "name": "AtomicRepresentable",
+            "printedName": "AtomicRepresentable",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "_Arg",
-                "printedName": "_Arg",
+                "name": "AtomicRepresentation",
+                "printedName": "AtomicRepresentation",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
+                    "name": "_Atomic64BitStorage",
+                    "printedName": "Synchronization._Atomic64BitStorage",
+                    "usr": "s:15Synchronization19_Atomic64BitStorageV"
                   }
                 ]
               }
             ],
-            "usr": "s:7SwiftUI18_FormatSpecifiableP",
-            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "VectorArithmetic",
-            "printedName": "VectorArithmetic",
-            "usr": "s:7SwiftUI16VectorArithmeticP",
-            "mangledName": "$s7SwiftUI16VectorArithmeticP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Animatable",
-            "printedName": "Animatable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "AnimatableData",
-                "printedName": "AnimatableData",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI10AnimatableP",
-            "mangledName": "$s7SwiftUI10AnimatableP"
+            "usr": "s:15Synchronization19AtomicRepresentableP",
+            "mangledName": "$s15Synchronization19AtomicRepresentableP"
           },
           {
             "kind": "Conformance",
@@ -10919,6 +11130,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -11019,6 +11237,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -11610,6 +11835,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -11723,6 +11955,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -11836,6 +12075,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -11950,6 +12196,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -12311,6 +12564,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -12701,6 +12961,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Strideable",
             "printedName": "Strideable",
             "children": [
@@ -12881,6 +13148,35 @@
           },
           {
             "kind": "Conformance",
+            "name": "_FormatSpecifiable",
+            "printedName": "_FormatSpecifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Arg",
+                "printedName": "_Arg",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18_FormatSpecifiableP",
+            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VectorArithmetic",
+            "printedName": "VectorArithmetic",
+            "usr": "s:7SwiftUI16VectorArithmeticP",
+            "mangledName": "$s7SwiftUI16VectorArithmeticP"
+          },
+          {
+            "kind": "Conformance",
             "name": "vDSP_FloatingPointConvertable",
             "printedName": "vDSP_FloatingPointConvertable",
             "usr": "s:10Accelerate29vDSP_FloatingPointConvertableP",
@@ -12961,20 +13257,13 @@
           },
           {
             "kind": "Conformance",
-            "name": "vDSP_FloatingPointGeneratable",
-            "printedName": "vDSP_FloatingPointGeneratable",
-            "usr": "s:10Accelerate29vDSP_FloatingPointGeneratableP",
-            "mangledName": "$s10Accelerate29vDSP_FloatingPointGeneratableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_FormatSpecifiable",
-            "printedName": "_FormatSpecifiable",
+            "name": "OperationParameter",
+            "printedName": "OperationParameter",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "_Arg",
-                "printedName": "_Arg",
+                "name": "Element",
+                "printedName": "Element",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -12985,15 +13274,37 @@
                 ]
               }
             ],
-            "usr": "s:7SwiftUI18_FormatSpecifiableP",
-            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
+            "usr": "s:10Accelerate9BNNSGraphO7BuilderV18OperationParameterP",
+            "mangledName": "$s10Accelerate9BNNSGraphO7BuilderV18OperationParameterP"
           },
           {
             "kind": "Conformance",
-            "name": "VectorArithmetic",
-            "printedName": "VectorArithmetic",
-            "usr": "s:7SwiftUI16VectorArithmeticP",
-            "mangledName": "$s7SwiftUI16VectorArithmeticP"
+            "name": "vDSP_FloatingPointGeneratable",
+            "printedName": "vDSP_FloatingPointGeneratable",
+            "usr": "s:10Accelerate29vDSP_FloatingPointGeneratableP",
+            "mangledName": "$s10Accelerate29vDSP_FloatingPointGeneratableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AtomicRepresentable",
+            "printedName": "AtomicRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AtomicRepresentation",
+                "printedName": "AtomicRepresentation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_Atomic32BitStorage",
+                    "printedName": "Synchronization._Atomic32BitStorage",
+                    "usr": "s:15Synchronization19_Atomic32BitStorageV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:15Synchronization19AtomicRepresentableP",
+            "mangledName": "$s15Synchronization19AtomicRepresentableP"
           },
           {
             "kind": "Conformance",
@@ -13112,6 +13423,7 @@
         "declAttributes": [
           "Available",
           "ObjC",
+          "Custom",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -13278,6 +13590,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       }
@@ -13610,14 +13929,14 @@
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APPaymentSuccessAlert.swift",
       "kind": "FloatLiteral",
-      "offset": 3815,
+      "offset": 3913,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APPaymentSuccessAlert.swift",
       "kind": "FloatLiteral",
-      "offset": 4336,
+      "offset": 4434,
       "length": 3,
       "value": "0.0"
     },
@@ -17376,35 +17695,35 @@
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APAlert.swift",
       "kind": "FloatLiteral",
-      "offset": 2644,
+      "offset": 2742,
       "length": 3,
       "value": "5.0"
-    },
-    {
-      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APAlert.swift",
-      "kind": "StringLiteral",
-      "offset": 3259,
-      "length": 9,
-      "value": "\"#737373\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APAlert.swift",
       "kind": "StringLiteral",
       "offset": 3357,
       "length": 9,
+      "value": "\"#737373\""
+    },
+    {
+      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APAlert.swift",
+      "kind": "StringLiteral",
+      "offset": 3455,
+      "length": 9,
       "value": "\"#E0E1E3\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APAlert.swift",
       "kind": "FloatLiteral",
-      "offset": 3408,
+      "offset": 3604,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APAlert.swift",
       "kind": "StringLiteral",
-      "offset": 3467,
+      "offset": 3663,
       "length": 9,
       "value": "\"#737373\""
     },
@@ -18139,112 +18458,126 @@
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 7844,
+      "offset": 2955,
+      "length": 9,
+      "value": "\"ic_cred\""
+    },
+    {
+      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 3012,
+      "length": 9,
+      "value": "\"ic_bhim\""
+    },
+    {
+      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 7958,
       "length": 20,
       "value": "\"ic_card_mastercard\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 7915,
+      "offset": 8029,
       "length": 14,
       "value": "\"ic_card_visa\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 7981,
+      "offset": 8095,
       "length": 15,
       "value": "\"ic_card_rupay\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8051,
+      "offset": 8165,
       "length": 18,
       "value": "\"ic_card_discover\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8123,
+      "offset": 8237,
       "length": 17,
       "value": "\"ic_card_maestro\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8193,
+      "offset": 8307,
       "length": 20,
       "value": "\"ic_card_dinersclub\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8264,
+      "offset": 8378,
       "length": 14,
       "value": "\"ic_card_amex\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8328,
+      "offset": 8442,
       "length": 13,
       "value": "\"ic_card_jcb\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8396,
+      "offset": 8510,
       "length": 18,
       "value": "\"ic_card_unionpay\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8466,
+      "offset": 8580,
       "length": 15,
       "value": "\"ic_card_dummy\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8662,
+      "offset": 8776,
       "length": 29,
       "value": "\"img_blue_logo_small_auropay\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8758,
+      "offset": 8872,
       "length": 30,
       "value": "\"img_white_logo_small_auropay\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8850,
+      "offset": 8964,
       "length": 24,
       "value": "\"img_cvv_card_bg_normal\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 8928,
+      "offset": 9042,
       "length": 16,
       "value": "\"img_receipt_bg\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 9363,
+      "offset": 9477,
       "length": 43,
       "value": "\"Unable to load color asset named \""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Resources\/Assets\/Assets.swift",
       "kind": "StringLiteral",
-      "offset": 9404,
+      "offset": 9518,
       "length": 1,
       "value": "\".\""
     },
@@ -18524,7 +18857,7 @@
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Scenes\/Home\/APHomeViewModel+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 27564,
+      "offset": 28305,
       "length": 1,
       "value": "0"
     },
@@ -25174,35 +25507,35 @@
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APCancelTransationAlert.swift",
       "kind": "FloatLiteral",
-      "offset": 2106,
+      "offset": 2204,
       "length": 3,
       "value": "5.0"
-    },
-    {
-      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APCancelTransationAlert.swift",
-      "kind": "StringLiteral",
-      "offset": 2721,
-      "length": 9,
-      "value": "\"#737373\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APCancelTransationAlert.swift",
       "kind": "StringLiteral",
       "offset": 2819,
       "length": 9,
+      "value": "\"#737373\""
+    },
+    {
+      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APCancelTransationAlert.swift",
+      "kind": "StringLiteral",
+      "offset": 2917,
+      "length": 9,
       "value": "\"#E0E1E3\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APCancelTransationAlert.swift",
       "kind": "FloatLiteral",
-      "offset": 2870,
+      "offset": 3066,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APCancelTransationAlert.swift",
       "kind": "StringLiteral",
-      "offset": 2929,
+      "offset": 3125,
       "length": 9,
       "value": "\"#737373\""
     },
@@ -26903,7 +27236,7 @@
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/UIComponents\/Alerts\/APPaymentFailureAlert.swift",
       "kind": "FloatLiteral",
-      "offset": 3320,
+      "offset": 3418,
       "length": 3,
       "value": "5.0"
     },
@@ -28106,29 +28439,36 @@
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Scenes\/Home\/APHomeViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 13635,
-      "length": 7,
-      "value": "\"RETRY\""
-    },
-    {
-      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Scenes\/Home\/APHomeViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 13726,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Scenes\/Home\/APHomeViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 15993,
+      "offset": 1584,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Scenes\/Home\/APHomeViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16140,
+      "offset": 13676,
+      "length": 7,
+      "value": "\"RETRY\""
+    },
+    {
+      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Scenes\/Home\/APHomeViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13767,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Scenes\/Home\/APHomeViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16034,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Scenes\/Home\/APHomeViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 16181,
       "length": 2,
       "value": "\"\""
     },
@@ -28305,14 +28645,14 @@
       "kind": "StringLiteral",
       "offset": 468,
       "length": 7,
-      "value": "\"1.2.5\""
+      "value": "\"1.3.1\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 512,
       "length": 7,
-      "value": "\"1.2.5\""
+      "value": "\"1.3.0\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
@@ -28331,217 +28671,245 @@
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 753,
+      "offset": 749,
+      "length": 3,
+      "value": "\"7\""
+    },
+    {
+      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 786,
       "length": 5,
       "value": "\"134\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 904,
+      "offset": 937,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1108,
+      "offset": 1141,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1251,
+      "offset": 1284,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1307,
+      "offset": 1340,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1352,
+      "offset": 1399,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1460,
+      "offset": 1444,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1552,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12356,
+      "offset": 11791,
       "length": 69,
       "value": "\"abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@-._\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12503,
+      "offset": 11938,
       "length": 9,
       "value": "\"PhonePe\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12541,
+      "offset": 11976,
       "length": 12,
       "value": "\"phonepe:\/\/\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12577,
+      "offset": 12012,
       "length": 12,
       "value": "\"Google Pay\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12619,
+      "offset": 12054,
       "length": 8,
       "value": "\"tez:\/\/\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12651,
+      "offset": 12086,
       "length": 7,
       "value": "\"Paytm\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12684,
+      "offset": 12119,
       "length": 12,
       "value": "\"paytmmp:\/\/\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 12155,
+      "length": 6,
+      "value": "\"CRED\""
+    },
+    {
+      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 12186,
+      "length": 12,
+      "value": "\"credpay:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 13779,
+      "offset": 13262,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13831,
+      "offset": 13314,
       "length": 18,
       "value": "\"Key.ShimmerLayer\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13876,
+      "offset": 13359,
       "length": 19,
       "value": "\"Key.TemplateLayer\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13979,
+      "offset": 13462,
       "length": 3,
       "value": "216"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13983,
+      "offset": 13466,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13995,
+      "offset": 13478,
       "length": 3,
       "value": "216"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 13999,
+      "offset": 13482,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 14010,
+      "offset": 13493,
       "length": 3,
       "value": "216"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 14014,
+      "offset": 13497,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 14026,
+      "offset": 13509,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 14070,
+      "offset": 13553,
       "length": 2,
       "value": "51"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 14073,
+      "offset": 13556,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 14085,
+      "offset": 13568,
       "length": 2,
       "value": "51"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 14088,
+      "offset": 13571,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 14099,
+      "offset": 13582,
       "length": 2,
       "value": "51"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 14102,
+      "offset": 13585,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Documents\/Aurionpro\/AuroPay SDK\/IOS-SDK\/AuroPay\/AuroPay\/Utilities\/Constant\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 14114,
+      "offset": 13597,
       "length": 3,
       "value": "1.0"
     },
@@ -28569,462 +28937,476 @@
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1150,
+      "offset": 1142,
+      "length": 9,
+      "value": "\"ic_bhim\""
+    },
+    {
+      "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1282,
       "length": 13,
       "value": "\"ic_calendar\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1290,
+      "offset": 1422,
       "length": 11,
       "value": "\"ic_cancel\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1433,
+      "offset": 1565,
       "length": 14,
       "value": "\"ic_card_amex\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1591,
+      "offset": 1723,
       "length": 20,
       "value": "\"ic_card_dinersclub\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1751,
+      "offset": 1883,
       "length": 18,
       "value": "\"ic_card_discover\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1903,
+      "offset": 2035,
       "length": 15,
       "value": "\"ic_card_dummy\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2048,
+      "offset": 2180,
       "length": 13,
       "value": "\"ic_card_jcb\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2199,
+      "offset": 2331,
       "length": 17,
       "value": "\"ic_card_maestro\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2360,
+      "offset": 2492,
       "length": 20,
       "value": "\"ic_card_mastercard\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2514,
+      "offset": 2646,
       "length": 15,
       "value": "\"ic_card_rupay\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2661,
+      "offset": 2793,
       "length": 14,
       "value": "\"ic_card_scan\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2822,
+      "offset": 2954,
       "length": 22,
       "value": "\"ic_card_south_indian\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2984,
+      "offset": 3116,
       "length": 18,
       "value": "\"ic_card_unionpay\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3134,
+      "offset": 3266,
       "length": 14,
       "value": "\"ic_card_visa\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3273,
+      "offset": 3405,
       "length": 10,
       "value": "\"ic_check\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3415,
+      "offset": 3547,
       "length": 14,
       "value": "\"ic_check_box\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3554,
+      "offset": 3686,
       "length": 10,
       "value": "\"ic_close\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3687,
+      "offset": 3819,
       "length": 9,
       "value": "\"ic_copy\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3843,
+      "offset": 3951,
+      "length": 9,
+      "value": "\"ic_cred\""
+    },
+    {
+      "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4107,
       "length": 22,
       "value": "\"ic_credit_debit_card\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3997,
+      "offset": 4261,
       "length": 14,
       "value": "\"ic_drop_down\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4144,
+      "offset": 4408,
       "length": 14,
       "value": "\"ic_encrypted\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4298,
+      "offset": 4562,
       "length": 18,
       "value": "\"ic_error_receipt\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4450,
+      "offset": 4714,
       "length": 15,
       "value": "\"ic_flash_auto\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4597,
+      "offset": 4861,
       "length": 14,
       "value": "\"ic_flash_off\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4741,
+      "offset": 5005,
       "length": 13,
       "value": "\"ic_flash_on\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4889,
+      "offset": 5153,
       "length": 15,
       "value": "\"ic_freecharge\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5027,
+      "offset": 5291,
       "length": 9,
       "value": "\"ic_gpay\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5159,
+      "offset": 5423,
       "length": 9,
       "value": "\"ic_info\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5299,
+      "offset": 5563,
       "length": 13,
       "value": "\"ic_keyboard\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5458,
+      "offset": 5722,
       "length": 21,
       "value": "\"ic_light_mastercard\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5613,
+      "offset": 5877,
       "length": 15,
       "value": "\"ic_light_visa\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5768,
+      "offset": 6032,
       "length": 18,
       "value": "\"ic_line_savecard\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5909,
+      "offset": 6173,
       "length": 9,
       "value": "\"ic_lock\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6054,
+      "offset": 6318,
       "length": 16,
       "value": "\"ic_lock_person\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6199,
+      "offset": 6463,
       "length": 12,
       "value": "\"ic_maestro\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6334,
+      "offset": 6598,
       "length": 9,
       "value": "\"ic_mail\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6479,
+      "offset": 6743,
       "length": 16,
       "value": "\"ic_net_banking\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6620,
+      "offset": 6884,
       "length": 10,
       "value": "\"ic_paytm\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6765,
+      "offset": 7029,
       "length": 15,
       "value": "\"ic_percentage\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6905,
+      "offset": 7169,
       "length": 10,
       "value": "\"ic_phone\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7046,
+      "offset": 7310,
       "length": 13,
       "value": "\"ic_phonepay\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7199,
+      "offset": 7463,
       "length": 18,
       "value": "\"ic_rounded_close\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7342,
+      "offset": 7606,
       "length": 10,
       "value": "\"ic_rupay\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7497,
+      "offset": 7761,
       "length": 21,
       "value": "\"ic_save_card_shield\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7658,
+      "offset": 7922,
       "length": 18,
       "value": "\"ic_saved_options\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7814,
+      "offset": 8078,
       "length": 17,
       "value": "\"ic_square_check\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7973,
+      "offset": 8237,
       "length": 19,
       "value": "\"ic_square_uncheck\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8128,
+      "offset": 8392,
       "length": 16,
       "value": "\"ic_txn_pending\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8273,
+      "offset": 8537,
       "length": 12,
       "value": "\"ic_uncheck\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8406,
+      "offset": 8670,
       "length": 8,
       "value": "\"ic_upi\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8558,
+      "offset": 8822,
       "length": 20,
       "value": "\"ic_upi_placeholder\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8724,
+      "offset": 8988,
       "length": 21,
       "value": "\"ic_verified_receipt\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8872,
+      "offset": 9136,
       "length": 11,
       "value": "\"ic_wallet\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9014,
+      "offset": 9278,
       "length": 13,
       "value": "\"ic_whatsapp\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9189,
+      "offset": 9453,
       "length": 30,
       "value": "\"img_auropay_blue_shield_logo\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9364,
+      "offset": 9628,
       "length": 21,
       "value": "\"img_auropay_logo_tm\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9561,
+      "offset": 9825,
       "length": 37,
       "value": "\"img_auropay_shield_transparent_logo\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9758,
+      "offset": 10022,
       "length": 29,
       "value": "\"img_blue_logo_small_auropay\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9937,
+      "offset": 10201,
       "length": 24,
       "value": "\"img_cvv_card_bg_normal\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10095,
+      "offset": 10359,
       "length": 15,
       "value": "\"img_dash_line\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10235,
+      "offset": 10499,
       "length": 10,
       "value": "\"img_gpay\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10384,
+      "offset": 10648,
       "length": 18,
       "value": "\"img_pci_dss_logo\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10552,
+      "offset": 10816,
       "length": 24,
       "value": "\"img_pci_dss_white_logo\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10712,
+      "offset": 10976,
       "length": 16,
       "value": "\"img_receipt_bg\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10870,
+      "offset": 11134,
       "length": 19,
       "value": "\"img_update_needed\""
     },
     {
       "filePath": "\/Users\/prithkothadiya\/Library\/Developer\/Xcode\/DerivedData\/AuroPay-avzlfqudpzornaawdwioackjgbaz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AuroPayPayments\/IntermediateBuildFilesPath\/AuroPay.build\/Release_PROD-iphoneos\/AuroPayPayments.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11051,
+      "offset": 11315,
       "length": 30,
       "value": "\"img_white_logo_small_auropay\""
     }

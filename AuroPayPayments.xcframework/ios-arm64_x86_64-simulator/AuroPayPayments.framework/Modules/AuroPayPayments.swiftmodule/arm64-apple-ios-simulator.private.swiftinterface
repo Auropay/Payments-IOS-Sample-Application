@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AuroPayPayments
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AVFoundation
 import AVKit
 import Accelerate
@@ -35,8 +35,12 @@ infix operator |> : AdditionPrecedence
 }
 @objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
 final public class Auropay : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func doPayment(displayViewController: UIKit.UIViewController, amount: Swift.Double, andDelegate delegate: any AuroPayPayments.APPaymentCompletionProtocol, referenceNumber: Swift.String? = nil, askCustomerDetails: Swift.Bool = false)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func doPayment(displayViewController: UIKit.UIViewController, amount: Swift.Double, andDelegateWithData delegate: any AuroPayPayments.APPaymentCompletionProtocolWithData, referenceNumber: Swift.String? = nil, askCustomerDetails: Swift.Bool = false)
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -47,7 +51,9 @@ final public class AuroPayBuilder : ObjectiveC.NSObject {
   @objc final public func secretKey(_ secretKey: Swift.String) -> AuroPayPayments.AuroPayBuilder
   @objc final public func customerProfile(_ customerProfile: AuroPayPayments.CustomerProfile) -> AuroPayPayments.AuroPayBuilder
   @objc final public func addEventListener(_ eventHandler: @escaping (Swift.String, Swift.String) -> Swift.Void) -> AuroPayPayments.AuroPayBuilder
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func theme(_ theme: AuroPayPayments.APTheme?) -> AuroPayPayments.AuroPayBuilder
+  #endif
   @objc final public func country(_ country: AuroPayPayments.Country) -> AuroPayPayments.AuroPayBuilder
   @objc final public func showReceipt(_ flag: Swift.Bool) -> AuroPayPayments.AuroPayBuilder
   @objc final public func allowCardScan(_ flag: Swift.Bool) -> AuroPayPayments.AuroPayBuilder
@@ -63,7 +69,9 @@ final public class AuroPayBuilder : ObjectiveC.NSObject {
 @available(iOS 13.0, *)
 @objc public protocol APPaymentCompletionProtocolWithData : AuroPayPayments.AuroPayPaymentResultProtocol {
   @objc func onPaymentSuccess(_ paymentData: AuroPayPayments.PaymentResultData)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func onPaymentError(_ message: Swift.String, _ paymentData: AuroPayPayments.PaymentResultData?)
+  #endif
 }
 @available(iOS 13.0, *)
 @objc public protocol AuroPayPaymentResultProtocol {
@@ -93,7 +101,9 @@ final public class PaymentResultData : ObjectiveC.NSObject {
 @objc public enum Country : Swift.Int {
   case IN
   case US
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
